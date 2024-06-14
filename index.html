@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Zoom In</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
-
   <body>
-    <div class="box" id="imagenZoom">
+    <div class="main">
+      <canvas id="canvas" class="canvas"></canvas>
       <img
-        src="https://media.geeksforgeeks.org/wp-content/uploads/20190912174307/qwe1.png"
-        id="imagenEjemplo"
-        alt="Geeksforgeeks"
+        src="./assets/img/bola_azul.png"
+        style="display: none"
+        id="bolaAzul"
+      />
+      <img
+        src="./assets/img/bola_roja.png"
+        style="display: none"
+        alt="bola azul"
+        id="bolaRoja"
       />
     </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/canvas.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
