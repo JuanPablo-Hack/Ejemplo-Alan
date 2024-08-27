@@ -1,0 +1,46 @@
+.global-banner-wrapper {
+  padding: 10px 50px;
+  line-height: 1.4
+}
+.global-banner {
+  display: flex;
+  width: 110%;
+  background: white;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  z-index: 10;
+  font-size: 12px
+}
+.global-banner .close-banner {
+  position: absolute;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.global-banner-spacer {
+  height: 54px;
+  width: 100%
+}
+@media screen and (min-width: 768px) {
+  .global-banner-wrapper {
+    padding: 10px 40px 10px 14px;
+    border: 2px solid #000;
+    left: 12px;
+    position: fixed;
+    bottom: 70px;
+    width: 370px;
+    top: auto;
+    transform: none
+  }
+  .global-banner {
+    text-align: left;
+    font-size: 14px;
+  }
+  .global-banner-spacer {
+    display: none
+  }
+}
